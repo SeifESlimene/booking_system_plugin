@@ -1,0 +1,78 @@
+:host {
+  display: block;
+  height: 100%;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 20px;
+  max-height: 80%;
+  overflow: auto;
+  padding: 1.5rem;
+}
+
+.facility {
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  border: 2px solid rgb(75, 127, 223);
+
+  font-size: 0.9rem;
+}
+
+.facility:hover {
+  box-shadow: rgba(75, 127, 223, 0.5) 0px 0px 3px;
+  background-color: rgb(75, 127, 223);
+  color: #fff;
+  cursor: pointer;
+}
+
+.title {
+  text-transform: uppercase;
+}
+
+button,
+a,
+select {
+  background-color: transparent;
+  color: rgb(61, 61, 61);
+  cursor: pointer;
+  font-family: "Nunito Sans", "Helvetica Neu", Helvetica, "Segoe UI", arial,
+    sans-serif;
+  font-size: 1rem;
+  border-width: 0px;
+  border-style: initial;
+  border-color: initial;
+  border-image: initial;
+  outline: none;
+}
+
+.h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 0 12px;
+  padding: 16px 0px;
+}
+
+#style-1::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	border-radius: 10px;
+	background-color: #F5F5F5;
+}
+
+#style-1::-webkit-scrollbar
+{
+	width: 12px;
+	background-color: #F5F5F5;
+}
+
+#style-1::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	background-color: rgb(75, 127, 223);
+}

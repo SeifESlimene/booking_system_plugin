@@ -1,0 +1,244 @@
+:host {
+  width: 100%;
+  background: #fff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.datetime {
+  font-weight: 600;
+  margin: 0px;
+}
+
+.summary {
+  background-color: rgb(255, 255, 255);
+  /* box-shadow: rgba(0, 0, 0, 0.12) 0px 0px 5px; */
+  color: rgb(61, 61, 61);
+  width: 100%;
+  /* border-top: 6px solid rgb(75, 127, 223); */
+  padding: 26px 32px 32px;
+  transition: border-top-color 0.25s ease 0s;
+  /* height: 100%; */
+}
+
+.priceinner1text {
+  padding-bottom: 8px;
+  flex: 1 1 0%;
+  margin: 0px;
+}
+
+.priceinner2text:last-of-type {
+  padding-bottom: 0px;
+}
+
+.priceinner2text {
+  padding-bottom: 8px;
+  text-align: right;
+  margin: 0px 0px 0px 16px;
+}
+
+.priceinner1 {
+  display: flex;
+  margin: 8px 0px;
+}
+
+.summary-services {
+  color: rgb(61, 61, 61);
+  margin-bottom: 16px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid rgb(233, 233, 233);
+}
+
+.serviceinnerlefttitle {
+  font-weight: 600;
+}
+
+.summary-services-title {
+  font-size: 1.15rem;
+  font-weight: 600;
+  margin: 0px;
+}
+
+h2 {
+  display: block;
+  font-size: 1.5em;
+  margin-block-start: 0.83em;
+  margin-block-end: 0.83em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+}
+
+.summary-services-count {
+  font-size: 0.85rem;
+  margin: 0px 0px 16px;
+  padding: 0px;
+}
+
+.priceinner {
+  width: 100%;
+  margin: -4px 0px -8px;
+}
+
+ul {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+.servicedatatimecontainer {
+  color: rgb(61, 61, 61);
+  margin-bottom: 16px;
+  padding-bottom: 16px;
+  display: flex;
+  border-bottom: 1px solid rgb(233, 233, 233);
+}
+
+.servicestotalprice {
+  color: rgb(61, 61, 61);
+  margin-bottom: 16px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid rgb(233, 233, 233);
+}
+
+.servicedatatime {
+  padding-left: 16px;
+}
+
+.confirm-order {
+  background-color: rgb(75, 127, 223);
+  color: rgb(255, 255, 255);
+  display: inline-block;
+  font-weight: 400;
+  min-width: 100px;
+  position: relative;
+  text-align: center;
+  white-space: nowrap;
+  font-size: 1rem;
+  width: 100%;
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgb(75, 127, 223);
+  border-image: initial;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: background-color 0.25s ease-in-out 0s,
+    border-color 0.25s ease-in-out 0s, box-shadow 0.25s ease-in-out 0s,
+    color 0.25s ease-in-out 0s, opacity 0.25s ease-in-out 0s;
+  padding: 16px 32px;
+  /* margin-top: 16px; */
+}
+
+.service {
+  width: 100%;
+  margin: -4px 0px -8px;
+}
+
+.serviceinner {
+  display: flex;
+  margin: 8px 0px;
+}
+
+.serviceinnerleft {
+  padding-bottom: 8px;
+  flex: 1 1 0%;
+  margin: 0px;
+}
+
+.serviceinnerright {
+  padding-bottom: 8px;
+  text-align: right;
+  margin: 0px 0px 0px 16px;
+}
+
+.price3 {
+  font-weight: 600;
+  line-height: 1.4;
+  margin: 0px;
+}
+
+button,
+a,
+select {
+  background-color: transparent;
+  color: rgb(61, 61, 61);
+  cursor: pointer;
+  font-family: "Nunito Sans", "Helvetica Neu", Helvetica, "Segoe UI", arial,
+    sans-serif;
+  font-size: 1rem;
+  border-width: 0px;
+  border-style: initial;
+  border-color: initial;
+  border-image: initial;
+  outline: none;
+}
+
+svg:not(:root).svg-inline--fa {
+  overflow: visible;
+}
+
+.svg-inline--fa.fa-w-14 {
+  width: 0.875em;
+}
+
+.logotimedate {
+  color: rgb(118, 118, 118);
+  font-size: 1.5rem;
+  margin-top: 4px;
+}
+
+.svg-inline--fa {
+  display: inline-block;
+  font-size: inherit;
+  height: 1em;
+  overflow: visible;
+  vertical-align: -0.125em;
+}
+
+.confirm {
+  background-color: rgb(255, 255, 255);
+  /* box-shadow: rgba(0, 0, 0, 0.12) 0px 0px 5px; */
+  box-sizing: content-box;
+  max-width: 696px;
+  margin: 0px auto 0px;
+  padding: 0px 32px;
+  box-sizing: border-box;
+}
+
+.confirm-left {
+  box-sizing: border-box;
+  flex: 1 1 100%;
+}
+.confirm-right {
+  box-sizing: border-box;
+  align-items: flex-end;
+  display: flex;
+  -webkit-box-pack: end;
+  justify-content: flex-end;
+  position: relative;
+  flex: 1 1 100%;
+  margin-top: 15px;
+}
+
+.left-text {
+  font-weight: 600;
+  margin: 0px 0px 8px;
+}
+
+.logo-confirm-color {
+  fill: rgb(75, 127, 223);
+}
+
+.confirm1 {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.textconfirm {
+  color: rgb(169, 169, 169);
+  margin: 0px;
+}

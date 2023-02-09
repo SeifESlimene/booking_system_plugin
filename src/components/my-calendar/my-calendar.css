@@ -1,0 +1,142 @@
+@import url('../../../node_modules/flatpickr/dist/flatpickr.min.css');
+
+:host {
+  display: block;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 10px;
+  padding: 1.5rem;
+}
+
+#calendar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 250px;
+  height: 250px;
+  margin: 30px auto 50px;
+}
+
+.flatpickr-calendar {
+  margin: 20px 0;
+}
+
+.time {
+  background-color: rgba(75, 127, 223, 0.9);
+  color: #fff;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px 0;
+  font-size: 1rem;
+}
+
+.time:hover {
+  background-color: rgba(75, 127, 223, 1);
+  text-shadow: 0px 0px 1px #fff;
+  color: #fff;
+  cursor: pointer;
+}
+
+button,
+a,
+select {
+  background-color: transparent;
+  color: rgb(61, 61, 61);
+  cursor: pointer;
+  font-family: "Nunito Sans", "Helvetica Neu", Helvetica, "Segoe UI", arial,
+    sans-serif;
+  font-size: 1rem;
+  border-width: 0px;
+  border-style: initial;
+  border-color: initial;
+  border-image: initial;
+  outline: none;
+}
+
+.h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 12px;
+  padding: 16px 0px;
+}
+
+
+.loader-15 {
+	background: currentcolor;
+	position: relative;
+	animation: loader-15 1s ease-in-out infinite;
+	animation-delay: 0.4s;
+	width: .25em;
+	height: .5em;
+	margin: 0 .5em;
+}
+
+.loader-15 :after,
+.loader-15 :before {
+  content: '';
+  position: absolute;
+  width: inherit;
+  height: inherit;
+  background: inherit;
+  animation: inherit;
+}
+.loader-15 :before {
+  right: .5em;
+  animation-delay: 0.2s;
+}
+.loader-15 :after {
+  left: .5em;
+  animation-delay: 0.6s;
+}
+
+
+@keyframes loader-15 {
+	0%,
+	100% {
+		box-shadow: 0 0 0 currentcolor, 0 0 0 currentcolor;
+	}
+	50% {
+		box-shadow: 0 -.25em 0 currentcolor, 0 .25em 0 currentcolor;
+	}
+}
+
+.box {
+	display: inline-block;
+	width: 200px;
+	height: 200px;
+	border: 1px solid currentcolor;
+	border-radius: 3px;
+	font-size: 30px;
+	padding: 1em;
+	position: relative;
+	margin-bottom: .25em;
+	vertical-align: top;
+  transition: .3s color, .3s border, .3s transform, .3s opacity;
+}
+
+	.box:hover {
+		color: #fff;
+		background-color: rgba(0,0,0,.1);
+		font-size: 0;
+		padding: 0;
+		border-width: 3px;
+		line-height: 200px;
+		opacity: 1;
+		transform: scale(1.2);
+		z-index: 2;
+
+}
+
+.box:hover [class*="loader-"] {
+  font-size: 70px;
+  line-height: 200px;
+}
+
+.load {
+  height: 30%;
+}
