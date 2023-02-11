@@ -16,21 +16,30 @@ export class MyService {
   @State() error: boolean = false;
   @State() services = [];
   @Event() stepChange: EventEmitter<StepData>;
-  @Element() domService;
+  @Element() domService: any;
   @Prop() token_api: string;
 
   async componentDidLoad() {
 
-    let res = await fetch(
-      `https://app.clubmaster.org/api/v1/products?api=${this.token_api}`
-    );
-    let response = await res.json();
-    this.services = response.result;
+    // let res = await fetch(
+    //   `https://app.clubmaster.org/api/v1/products?api=${this.token_api}`
+    // );
+    // let response = await res.json();
+    // this.services = response.result;
+    this.services = [
+      { id: 1, name: '1 haircut', description: '', duration: 30, price: 35.00, currency: 'USD' },
+      { id: 2, name: '1 hour tennis practice', description: '', duration: 60, price: 120.00, currency: 'USD' },
+      { id: 3, name: '1 hour, fullbody message', description: '', duration: 50, price: 40.00, currency: 'USD' },
+      { id: 4, name: 'Detail Wash', description: '', duration: 50, price: 20.00, currency: 'USD' },
+      { id: 5, name: 'Personal Coaching', description: '', duration: 60, price: 25.00, currency: 'USD' },
+      { id: 6, name: 'Personal Coaching', description: '', duration: 60, price: 15.00, currency: 'USD' },
+      { id: 7, name: 'Personal Coaching', description: '', duration: 30, price: 10.00, currency: 'USD' },
+    ]
     this.loading = false;
 
   }
 
-  checkPP(e, id) {
+  checkPP(e: any, id: any) {
     if (!this.selectedServicesIds.includes(id)) {
       this.selectedServicesIds = [...this.selectedServicesIds, id];
     } else {
@@ -58,6 +67,7 @@ export class MyService {
     }
 
   }
+  
   render() {
     return (
       <Host>
@@ -125,12 +135,12 @@ export class MyService {
                           <g></g>
                           <g></g>
                         </svg>
-                      Alert!
-                    </h2>
+                        Alert!
+                      </h2>
                       <p>
                         You need to select at least a single product, click on the
                         product name to buy it
-                    </p>
+                      </p>
                     </div>
                   </li>
                 )}
@@ -173,7 +183,7 @@ export class MyService {
                   onClick={() => this.onPickTime()}
                 >
                   Pick Time
-              </button>
+                </button>
               </div>
             </div>
           </div>)}

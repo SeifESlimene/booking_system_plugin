@@ -1,0 +1,134 @@
+{
+	"info": {
+		"_postman_id": "7311a29a-ed8a-41c7-aed5-72a423ccf0af",
+		"name": "ClubMaster",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "https://app.clubmaster.org/api/v1/appointments/create?api=dffbdf05-7fd7-479c-9c48-4034282afc87",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"email\": \"hollo@hollo.dk\",\n    \"firstname\": \"Michael\",\n    \"lastname\": \"Holm\",\n    \"facility\": 1,\n    \"start\": \"2020-07-25 17:00:00\",\n    \"note\": \"Looking forward\",\n    \"products\": [\n        10\n    ]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://app.clubmaster.org/api/v1/appointments/create?api=dffbdf05-7fd7-479c-9c48-4034282afc87",
+					"protocol": "https",
+					"host": [
+						"app",
+						"clubmaster",
+						"org"
+					],
+					"path": [
+						"api",
+						"v1",
+						"appointments",
+						"create"
+					],
+					"query": [
+						{
+							"key": "api",
+							"value": "dffbdf05-7fd7-479c-9c48-4034282afc87"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://app.clubmaster.org/api/v1/products?api=dffbdf05-7fd7-479c-9c48-4034282afc87",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://app.clubmaster.org/api/v1/products?api=dffbdf05-7fd7-479c-9c48-4034282afc87",
+					"protocol": "https",
+					"host": [
+						"app",
+						"clubmaster",
+						"org"
+					],
+					"path": [
+						"api",
+						"v1",
+						"products"
+					],
+					"query": [
+						{
+							"key": "api",
+							"value": "dffbdf05-7fd7-479c-9c48-4034282afc87"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://app.clubmaster.org/api/v1/facilities?api=dffbdf05-7fd7-479c-9c48-4034282afc87",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://app.clubmaster.org/api/v1/facilities?api=dffbdf05-7fd7-479c-9c48-4034282afc87",
+					"protocol": "https",
+					"host": [
+						"app",
+						"clubmaster",
+						"org"
+					],
+					"path": [
+						"api",
+						"v1",
+						"facilities"
+					],
+					"query": [
+						{
+							"key": "api",
+							"value": "dffbdf05-7fd7-479c-9c48-4034282afc87"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://app.clubmaster.org/api/v1/facilities/1/available?api=dffbdf05-7fd7-479c-9c48-4034282afc87",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://app.clubmaster.org/api/v1/facilities/1/available?api=dffbdf05-7fd7-479c-9c48-4034282afc87",
+					"protocol": "https",
+					"host": [
+						"app",
+						"clubmaster",
+						"org"
+					],
+					"path": [
+						"api",
+						"v1",
+						"facilities",
+						"1",
+						"available"
+					],
+					"query": [
+						{
+							"key": "api",
+							"value": "dffbdf05-7fd7-479c-9c48-4034282afc87"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}

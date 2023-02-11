@@ -35,7 +35,7 @@ export class MyModal implements ComponentInterface {
   }
 
   @Listen("stepChange")
-  setStep(e) {
+  setStep(e: any) {
     this.step = e.detail.step;
     this.modalData[e.detail.name] = e.detail.data;
   }

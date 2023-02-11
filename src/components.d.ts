@@ -5,10 +5,10 @@
  * It contains typing information for all components that exist in this project.
  */
 import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
-import { StepData, } from "./components/my-calendar/my-calendar";
-import { StepData as StepData1, } from "./components/my-facilities/my-facilities";
-import { StepData as StepData2, } from "./components/my-form/my-form";
-import { StepData as StepData3, } from "./components/my-service/my-service";
+import { StepData } from "./components/my-calendar/my-calendar";
+import { StepData as StepData1 } from "./components/my-facilities/my-facilities";
+import { StepData as StepData2 } from "./components/my-form/my-form";
+import { StepData as StepData3 } from "./components/my-service/my-service";
 export namespace Components {
     interface MyButton {
         "buttonExpanded": boolean;
